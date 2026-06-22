@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Jeny &amp; Víctor — El Umbral</title>
+    <title>Jeny &amp; Víctor — Próximamente</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Hanken+Grotesk:ital,wght@0,400..800;1,400..800&amp;display=swap"
@@ -20,136 +20,15 @@
           extend: {
             colors: {
               'on-background': '#e9e1d8',
-              'on-tertiary-fixed': '#001a41',
-              'on-primary': '#412d00',
-              'surface-variant': '#38342e',
-              'on-primary-fixed': '#261900',
-              'tertiary-container': '#8fa5d6',
-              'outline-variant': '#4e4639',
-              'on-tertiary-container': '#233a65',
-              'surface-container-high': '#2d2924',
-              'surface-container-highest': '#38342e',
-              tertiary: '#b0c6f9',
-              'surface-dim': '#16130e',
-              'on-tertiary': '#173059',
-              'on-secondary-container': '#b7b8bd',
-              'on-primary-container': '#4e3700',
-              'primary-fixed': '#ffdea5',
-              'inverse-on-surface': '#34302a',
-              'surface-container': '#231f1a',
-              'error-container': '#93000a',
               'on-surface': '#e9e1d8',
-              surface: '#16130e',
-              'surface-tint': '#e9c176',
-              'on-error-container': '#ffdad6',
-              'inverse-surface': '#e9e1d8',
-              'secondary-container': '#47494d',
-              'primary-container': '#E5C17E',
-              'on-secondary-fixed-variant': '#45474b',
-              secondary: '#c6c6cb',
-              error: '#ffb4ab',
-              'primary-fixed-dim': '#e9c176',
-              'on-primary-fixed-variant': '#5d4201',
-              'on-tertiary-fixed-variant': '#304671',
-              'tertiary-fixed': '#d8e2ff',
               background: '#16130e',
-              'tertiary-fixed-dim': '#b0c6f9',
-              'on-error': '#690005',
-              'surface-container-lowest': '#110e09',
-              'on-secondary': '#2e3035',
-              'surface-container-low': '#1e1b16',
-              'inverse-primary': '#775a19',
-              'secondary-fixed-dim': '#c6c6cb',
-              'on-secondary-fixed': '#1a1c20',
               primary: '#e9c176',
-              'surface-bright': '#3d3933',
-              outline: '#9a8f80',
-              'on-surface-variant': '#d1c5b4',
-              'secondary-fixed': '#e2e2e7',
-            },
-            borderRadius: {
-              DEFAULT: '0.25rem',
-              lg: '0.5rem',
-              xl: '0.75rem',
-              full: '9999px',
-            },
-            spacing: {
-              'margin-desktop': '64px',
-              gutter: '24px',
-              'margin-mobile': '20px',
-              base: '8px',
-              'container-max': '1280px',
             },
             fontFamily: {
               'body-md': ['Hanken Grotesk'],
-              'label-sm': ['Hanken Grotesk'],
               'headline-lg': ['Bodoni Moda'],
               'display-lg': ['Bodoni Moda'],
-              'label-md': ['Hanken Grotesk'],
               'headline-md': ['Bodoni Moda'],
-              'headline-lg-mobile': ['Bodoni Moda'],
-              'body-lg': ['Hanken Grotesk'],
-            },
-            fontSize: {
-              'body-md': [
-                '16px',
-                {
-                  lineHeight: '1.6',
-                  fontWeight: '400',
-                },
-              ],
-              'label-sm': [
-                '12px',
-                {
-                  lineHeight: '1.4',
-                  letterSpacing: '0.05em',
-                  fontWeight: '500',
-                },
-              ],
-              'headline-lg': [
-                '40px',
-                {
-                  lineHeight: '1.2',
-                  fontWeight: '500',
-                },
-              ],
-              'display-lg': [
-                '64px',
-                {
-                  lineHeight: '1.1',
-                  letterSpacing: '-0.02em',
-                  fontWeight: '600',
-                },
-              ],
-              'label-md': [
-                '14px',
-                {
-                  lineHeight: '1.4',
-                  letterSpacing: '0.05em',
-                  fontWeight: '600',
-                },
-              ],
-              'headline-md': [
-                '28px',
-                {
-                  lineHeight: '1.3',
-                  fontWeight: '500',
-                },
-              ],
-              'headline-lg-mobile': [
-                '32px',
-                {
-                  lineHeight: '1.2',
-                  fontWeight: '500',
-                },
-              ],
-              'body-lg': [
-                '18px',
-                {
-                  lineHeight: '1.6',
-                  fontWeight: '400',
-                },
-              ],
             },
           },
         },
@@ -158,657 +37,78 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body
-    class="bg-[#0E0E11] selection:bg-primary-container selection:text-[#0E0E11]"
+    class="bg-[#0E0E11] selection:bg-[#E5C17E]/20 selection:text-[#E5C17E] min-h-screen flex flex-col justify-between"
   >
-    <!-- NAVIGATION SHELL -->
-    <header
-      id="header"
-      class="fixed top-0 w-full z-50 border-b border-[#1C1E22] backdrop-blur-xl flex justify-between items-center px-margin-mobile md:px-gutter py-8 max-w-container-max mx-auto left-0 right-0 transition-all duration-500"
-    >
-      <div
-        class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-[#E5C17E] uppercase tracking-widest drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
-      >
-        Jeny &amp; Víctor
+    <main class="bg-grain flex-grow flex flex-col justify-center items-center relative overflow-hidden px-5 py-12">
+      <!-- Glow elements -->
+      <div class="absolute inset-0 z-0 pointer-events-none">
+        <div class="eclipse-glow absolute top-1/4 -left-1/4 w-[600px] h-[600px] animate-float"></div>
+        <div class="eclipse-glow absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] animate-float" style="animation-delay: -2s;"></div>
       </div>
-      <nav class="hidden md:flex space-x-gutter">
-        <a
-          class="font-label-sm text-label-sm text-[#e9e1d8] opacity-70 hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-500 uppercase"
-          href="#normas"
-          >Normas</a
-        >
-        <a
-          class="font-label-sm text-label-sm text-[#e9e1d8] opacity-70 hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-500 uppercase"
-          href="#regalos"
-          >Regalos</a
-        >
-        <a
-          class="font-label-sm text-label-sm text-[#e9e1d8] opacity-70 hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-500 uppercase"
-          href="#musica"
-          >Música</a
-        >
-        <a
-          class="font-label-sm text-label-sm text-[#e9e1d8] opacity-70 hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-500 uppercase"
-          href="#confirmar"
-          >Confirmar</a
-        >
-        <a
-          class="font-label-sm text-label-sm text-[#e9e1d8] opacity-70 hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-500 uppercase"
-          href="#galeria"
-          >Galería</a
-        >
-      </nav>
-      <button
-        id="cta-button"
-        class="hidden md:block font-label-sm text-label-sm text-[#E5C17E] border border-[#E5C17E] px-6 py-3 hover:bg-[#E5C17E] hover:text-[#0E0E11] hover:shadow-[0_0_15px_rgba(229,193,126,0.4)] transition-all duration-500 active:scale-95 uppercase"
-      >
-        Estáis convocados
-      </button>
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="md:hidden text-[#E5C17E] p-2">
-        <span class="material-symbols-outlined text-3xl">menu</span>
-      </button>
-    </header>
 
-    <!-- Mobile Menu -->
-    <div
-      id="mobile-menu"
-      class="mobile-menu fixed inset-0 z-40 bg-[#0E0E11] md:hidden flex flex-col justify-center items-center space-y-8"
-    >
-      <button id="close-menu-btn" class="absolute top-8 right-8 text-[#E5C17E]">
-        <span class="material-symbols-outlined text-3xl">close</span>
-      </button>
-      <a
-        class="font-headline-lg text-[#e9e1d8] hover:text-[#E5C17E] transition-all duration-300"
-        href="#normas"
-        >Normas</a
-      >
-      <a
-        class="font-headline-lg text-[#e9e1d8] hover:text-[#E5C17E] transition-all duration-300"
-        href="#regalos"
-        >Regalos</a
-      >
-      <a
-        class="font-headline-lg text-[#e9e1d8] hover:text-[#E5C17E] transition-all duration-300"
-        href="#musica"
-        >Música</a
-      >
-      <a
-        class="font-headline-lg text-[#e9e1d8] hover:text-[#E5C17E] transition-all duration-300"
-        href="#confirmar"
-        >Confirmar</a
-      >
-      <a
-        class="font-headline-lg text-[#e9e1d8] hover:text-[#E5C17E] transition-all duration-300"
-        href="#galeria"
-        >Galería</a
-      >
-    </div>
+      <!-- Main content card -->
+      <div class="relative z-10 max-w-lg w-full text-center space-y-12 animate-reveal">
+        <!-- Date in Roman numerals -->
+        <span class="font-label-sm text-sm text-[#3A3D42] block uppercase tracking-widest">
+          OCTUBRE XXXI — MMXXVI
+        </span>
 
-    <main class="bg-grain">
-      <!-- HERO SECTION -->
-      <section
-        id="hero"
-        class="relative min-h-screen flex flex-col justify-center items-center text-center px-margin-mobile pt-[128px] pb-gutter overflow-hidden"
-      >
-        <div class="absolute inset-0 z-0">
-          <div
-            class="eclipse-glow absolute top-1/4 -left-1/4 w-[600px] h-[600px]"
-          ></div>
-          <div
-            class="eclipse-glow absolute bottom-1/4 -right-1/4 w-[600px] h-[600px]"
-          ></div>
+        <!-- Crest Ornament -->
+        <div class="flex justify-center">
+          <img
+            alt="Victorian Crest Divider"
+            class="h-10 w-auto opacity-80 brightness-150 saturate-200"
+            src="https://lh3.googleusercontent.com/aida/ADBb0ujvy2wBiYAJVd7_GQgOxo4vMh-GW_83D_Nm4q3NmG8c9XFHy-qzdxfEbs5dgCE_FRflWvtj6pjPnxRfNIujt5v-2tb01TWmJ3YEc-_5He92WeqJVTY3wWzeGtR-3oqhtrxpkG0fof5IxIT4TXkx_KYESi7PGQg_5g1hAzv230cUg2zXH3ytU6CpQXr9STrSsprc1gNOEx9myqZkgr4L-2Umt1tpieUrSedK3Zo9jWaD2ls1hh2Fm_MlnrI"
+          />
         </div>
-        <div class="relative z-10 animate-reveal">
-          <span
-            class="font-label-sm text-label-sm text-[#3A3D42] mb-8 block uppercase tracking-widest"
-            >OCTUBRE XXXI — MMXIV</span
-          >
-          <h1
-            class="font-display-lg text-[80px] md:text-display-lg text-[#e9e1d8] mb-12 tracking-tighter italic"
-          >
-            Jeny
-            <span
-              class="not-italic text-[#E5C17E] drop-shadow-[0_0_10px_rgba(229,193,126,0.5)]"
-              >&amp;</span
-            >
-            Víctor
-          </h1>
-          <div class="max-w-[800px] mx-auto space-y-8">
-            <p
-              class="font-body-lg text-body-lg text-[#e9e1d8] leading-relaxed italic opacity-90"
-            >
-              "En el umbral entre la luz y la oscuridad, cuando el año comienza
-              a inclinarse hacia su mitad más sombría, nuestras almas sellarán
-              su destino."
-            </p>
-            <p
-              class="font-headline-md text-headline-md text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
-            >
-              Te invitamos a ser testigo de este pacto.
-            </p>
-            <div
-              class="font-label-sm text-label-sm text-[#3A3D42] border-y border-[#1C1E22] py-4 inline-block uppercase tracking-widest"
-            >
-              Mediodía como testigo
-            </div>
-          </div>
-          <div
-            class="mt-[128px] grid grid-cols-1 md:grid-cols-2 gap-gutter text-left max-w-container-max mx-auto w-full border-t border-[#1C1E22] pt-12"
-          >
-            <div>
-              <span
-                class="font-label-sm text-label-sm text-[#3A3D42] block mb-4 uppercase tracking-widest"
-                >MOMENTO</span
-              >
-              <p
-                class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e9e1d8]"
-              >
-                Sábado, 31 de octubre
-              </p>
-              <p
-                class="font-headline-md text-[24px] text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] mt-2"
-              >
-                12:00 h.
-              </p>
-            </div>
-            <div>
-              <span
-                class="font-label-sm text-label-sm text-[#3A3D42] block mb-4 uppercase tracking-widest"
-                >LUGAR</span
-              >
-              <p
-                class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e9e1d8]"
-              >
-                Finca Torre Pilar
-              </p>
-              <p
-                class="font-headline-md text-[24px] text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] mt-2"
-              >
-                Garrapinillos – Zaragoza
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60 cursor-pointer"
-          onclick="
-            document
-              .getElementById('normas')
-              .scrollIntoView({ behavior: 'smooth' })
-          "
-        >
-          <span
-            class="material-symbols-outlined text-[32px] text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.5)]"
-            >expand_more</span
-          >
-        </div>
-      </section>
-      <!-- MINIMAL ARCHITECTURAL DIVIDER -->
-      <div class="py-16 px-margin-mobile">
-        <img
-          alt="Victorian Divider"
-          class="mx-auto h-12 w-auto opacity-100 brightness-150 saturate-200"
-          src="https://lh3.googleusercontent.com/aida/ADBb0uj1L0i5AnD3mKGWvHiNhTsMSucqgIFBP9woOIaj3cQtU10lFUmxdVvk-36A-yiEy3io0CtGjCJuP9H4cTKyWOriNOqAZLsT5jqda1UMdDXKqRRA5yIb0M9JtyJ4pgc2cpO9jgzxn66ybSYpHolToeTWYq8bme8IFs1wNhlrK9zGvxboMK9T20zQz2clmLl8rYQ86ksbyMIFXRt1oPXq4-yVGtcnQFArcD26C_Y4_K7jm7rfnoSVk5cNQyI"
-        />
-      </div>
-      <!-- NORMAS (RITUAL CODE) -->
-      <section
-        id="normas"
-        class="max-w-container-max mx-auto px-margin-mobile py-[128px]"
-      >
-        <div class="flex flex-col md:flex-row gap-gutter">
-          <div class="md:w-1/3">
-            <h2
-              class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] sticky top-32 scroll-reveal"
-            >
-              10 Mandamientos del <br /><span class="italic text-[#e9e1d8]"
-                >Ritual</span
-              >
-            </h2>
-          </div>
-          <div class="md:w-2/3 grid grid-cols-1 gap-12">
-            <div class="border-l border-[#1C1E22] pl-8 py-4 scroll-reveal">
-              <span
-                class="font-label-sm text-label-sm text-[#3A3D42] uppercase tracking-widest"
-                >01. EL CÓDIGO</span
-              >
-              <p
-                class="font-body-md text-body-md text-[#e9e1d8] mt-4 opacity-80"
-              >
-                La etiqueta debe reflejar la solemnidad del encuentro. Se
-                sugiere una elegancia arquitectónica, evitando colores
-                estridentes que rompan la atmósfera del eclipse.
-              </p>
-            </div>
-            <div class="border-l border-[#1C1E22] pl-8 py-4 scroll-reveal">
-              <span
-                class="font-label-sm text-label-sm text-[#3A3D42] uppercase tracking-widest"
-                >02. LA PRESENCIA</span
-              >
-              <p
-                class="font-body-md text-body-md text-[#e9e1d8] mt-4 opacity-80"
-              >
-                El tiempo es absoluto. Rogamos puntualidad para no perturbar el
-                inicio de la ceremonia en el mediodía exacto.
-              </p>
-            </div>
-            <div class="border-l border-[#1C1E22] pl-8 py-4 scroll-reveal">
-              <span
-                class="font-label-sm text-label-sm text-[#3A3D42] uppercase tracking-widest"
-                >03. EL SILENCIO DIGITAL</span
-              >
-              <p
-                class="font-body-md text-body-md text-[#e9e1d8] mt-4 opacity-80"
-              >
-                Permitid que vuestros ojos sean el único archivo del momento del
-                pacto. El uso de dispositivos queda relegado al festín
-                posterior.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- MINIMAL ARCHITECTURAL DIVIDER -->
-      <div class="py-16 px-margin-mobile">
-        <img
-          alt="Victorian Divider"
-          class="mx-auto h-12 w-auto opacity-100 brightness-150 saturate-200"
-          src="https://lh3.googleusercontent.com/aida/ADBb0uj1L0i5AnD3mKGWvHiNhTsMSucqgIFBP9woOIaj3cQtU10lFUmxdVvk-36A-yiEy3io0CtGjCJuP9H4cTKyWOriNOqAZLsT5jqda1UMdDXKqRRA5yIb0M9JtyJ4pgc2cpO9jgzxn66ybSYpHolToeTWYq8bme8IFs1wNhlrK9zGvxboMK9T20zQz2clmLl8rYQ86ksbyMIFXRt1oPXq4-yVGtcnQFArcD26C_Y4_K7jm7rfnoSVk5cNQyI"
-        />
-      </div>
-      <!-- REGALOS (IRONIC LIST) -->
-      <section id="regalos" class="py-[128px] bg-[#16181D]">
-        <div class="max-w-container-max mx-auto px-margin-mobile">
-          <div class="text-center mb-16 scroll-reveal">
-            <h2
-              class="font-display-lg text-headline-lg-mobile md:text-display-lg text-[#e9e1d8] italic"
-            >
-              Ofrendas
-            </h2>
-            <p
-              class="font-body-md text-body-md text-[#e9e1d8] opacity-60 mt-4 max-w-md mx-auto"
-            >
-              Vuestra presencia es el único tributo exigido. No obstante, si el
-              impulso de la generosidad os domina, aquí hay algunas sugerencias
-              carentes de toda modestia.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Gift Card 1 -->
-            <div
-              class="bg-[#1C1E22] border border-[#1C1E22] p-12 group hover:border-[#E5C17E]/60 hover:shadow-[0_0_20px_rgba(229,193,126,0.15)] transition-all duration-700 flex flex-col rounded scroll-reveal cursor-pointer"
-            >
-              <span
-                class="material-symbols-outlined text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.5)] text-4xl mb-6 group-hover:scale-110 transition-transform duration-300"
-                >restaurant</span
-              >
-              <h3 class="font-headline-md text-[24px] mb-4 text-[#e9e1d8]">
-                Cena en el restaurante más caro del mundo
-              </h3>
-              <p class="font-body-md text-body-md text-[#3A3D42] mb-8 italic">
-                Porque el hambre espiritual se sacia mejor con caviar.
-              </p>
-              <img
-                alt="Flourish"
-                class="mx-auto h-8 w-auto mt-auto opacity-100 brightness-150 saturate-200"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uiSLCXgt27eRleaCX7OywUbzzsR1ocUQ_VkHLV3Maf19Hb17IJfE2laCcldvsPZHz1FrbcgEc5lcGLO8HaviG5MD-tUiStkLYoyFNHp34A26FTqD4cp_8jTz9StAokhQldPEwzkhSKKxjVTy_OKxJdAo3a1dltIBG96jBvMSAwXrHMzd9gra8xCaNLzuInHZlCEcL1_lDUZqsHUlHWZLGVE-8mA_ofNPKnbdj9gXDYHThnAXjxc_3aWnsU"
-              />
-            </div>
-            <!-- Gift Card 2 -->
-            <div
-              class="bg-[#1C1E22] border border-[#1C1E22] p-12 group hover:border-[#E5C17E]/60 hover:shadow-[0_0_20px_rgba(229,193,126,0.15)] transition-all duration-700 flex flex-col rounded scroll-reveal cursor-pointer"
-            >
-              <span
-                class="material-symbols-outlined text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.5)] text-4xl mb-6 group-hover:scale-110 transition-transform duration-300"
-                >rocket_launch</span
-              >
-              <h3 class="font-headline-md text-[24px] mb-4 text-[#e9e1d8]">
-                Viaje orbital
-              </h3>
-              <p class="font-body-md text-body-md text-[#3A3D42] mb-8 italic">
-                Para cuando este planeta se nos quede pequeño.
-              </p>
-              <img
-                alt="Flourish"
-                class="mx-auto h-8 w-auto mt-auto opacity-100 brightness-150 saturate-200"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uiSLCXgt27eRleaCX7OywUbzzsR1ocUQ_VkHLV3Maf19Hb17IJfE2laCcldvsPZHz1FrbcgEc5lcGLO8HaviG5MD-tUiStkLYoyFNHp34A26FTqD4cp_8jTz9StAokhQldPEwzkhSKKxjVTy_OKxJdAo3a1dltIBG96jBvMSAwXrHMzd9gra8xCaNLzuInHZlCEcL1_lDUZqsHUlHWZLGVE-8mA_ofNPKnbdj9gXDYHThnAXjxc_3aWnsU"
-              />
-            </div>
-            <!-- Gift Card 3 -->
-            <div
-              class="bg-[#1C1E22] border border-[#1C1E22] p-12 group hover:border-[#E5C17E]/60 hover:shadow-[0_0_20px_rgba(229,193,126,0.15)] transition-all duration-700 flex flex-col rounded scroll-reveal cursor-pointer"
-            >
-              <span
-                class="material-symbols-outlined text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.5)] text-4xl mb-6 group-hover:scale-110 transition-transform duration-300"
-                >castle</span
-              >
-              <h3 class="font-headline-md text-[24px] mb-4 text-[#e9e1d8]">
-                Castillo en ruinas con potencial
-              </h3>
-              <p class="font-body-md text-body-md text-[#3A3D42] mb-8 italic">
-                Donde cultivar nuestras sombras en paz.
-              </p>
-              <img
-                alt="Flourish"
-                class="mx-auto h-8 w-auto mt-auto opacity-100 brightness-150 saturate-200"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uiSLCXgt27eRleaCX7OywUbzzsR1ocUQ_VkHLV3Maf19Hb17IJfE2laCcldvsPZHz1FrbcgEc5lcGLO8HaviG5MD-tUiStkLYoyFNHp34A26FTqD4cp_8jTz9StAokhQldPEwzkhSKKxjVTy_OKxJdAo3a1dltIBG96jBvMSAwXrHMzd9gra8xCaNLzuInHZlCEcL1_lDUZqsHUlHWZLGVE-8mA_ofNPKnbdj9gXDYHThnAXjxc_3aWnsU"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- MÚSICA -->
-      <section
-        id="musica"
-        class="py-[128px] max-w-container-max mx-auto px-margin-mobile"
-      >
-        <div class="flex flex-col md:flex-row items-center gap-gutter">
-          <div class="md:w-1/2 space-y-8 scroll-reveal">
-            <h2
-              class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e9e1d8]"
-            >
-              El eco de la
-              <span
-                class="text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] italic"
-                >Celebración</span
-              >
-            </h2>
-            <p class="font-body-lg text-body-lg text-[#e9e1d8] opacity-70">
-              Añade lo que quieras escuchar. Bajo tu responsabilidad.
-            </p>
-            <p class="font-body-md text-body-md text-[#3A3D42]">
-              Las sugerencias que no encajen con la vibración del evento serán
-              sacrificadas al amanecer.
-            </p>
-          </div>
-          <div class="md:w-1/2 w-full scroll-reveal">
-            <div
-              class="w-full py-12 border-y border-[#1C1E22] flex flex-col items-center justify-center space-y-6 bg-[#1C1E22] rounded hover:shadow-[0_0_20px_rgba(229,193,126,0.15)] transition-all duration-700"
-            >
-              <img
-                alt="Ornament"
-                class="h-6 opacity-100 brightness-150 saturate-200"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uiSLCXgt27eRleaCX7OywUbzzsR1ocUQ_VkHLV3Maf19Hb17IJfE2laCcldvsPZHz1FrbcgEc5lcGLO8HaviG5MD-tUiStkLYoyFNHp34A26FTqD4cp_8jTz9StAokhQldPEwzkhSKKxjVTy_OKxJdAo3a1dltIBG96jBvMSAwXrHMzd9gra8xCaNLzuInHZlCEcL1_lDUZqsHUlHWZLGVE-8mA_ofNPKnbdj9gXDYHThnAXjxc_3aWnsU"
-              />
-              <div class="flex items-center space-x-4 opacity-90">
-                <span
-                  class="material-symbols-outlined text-3xl text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.5)]"
-                  >music_note</span
-                >
-                <p class="font-headline-md text-xl text-[#e9e1d8]">
-                  Ritual Sonoro (Spotify)
-                </p>
-              </div>
-              <button
-                id="music-suggestion-btn"
-                class="font-label-sm text-label-sm text-[#E5C17E] border border-[#E5C17E]/60 px-8 py-3 hover:bg-[#E5C17E] hover:text-[#0E0E11] hover:shadow-[0_0_15px_rgba(229,193,126,0.4)] transition-all uppercase tracking-widest"
-              >
-                Sugerir una pieza
-              </button>
-              <img
-                alt="Ornament"
-                class="h-6 opacity-100 brightness-150 saturate-200 rotate-180"
-                src="https://lh3.googleusercontent.com/aida/ADBb0uiSLCXgt27eRleaCX7OywUbzzsR1ocUQ_VkHLV3Maf19Hb17IJfE2laCcldvsPZHz1FrbcgEc5lcGLO8HaviG5MD-tUiStkLYoyFNHp34A26FTqD4cp_8jTz9StAokhQldPEwzkhSKKxjVTy_OKxJdAo3a1dltIBG96jBvMSAwXrHMzd9gra8xCaNLzuInHZlCEcL1_lDUZqsHUlHWZLGVE-8mA_ofNPKnbdj9gXDYHThnAXjxc_3aWnsU"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- MINIMAL ARCHITECTURAL DIVIDER -->
-      <div class="py-16 px-margin-mobile">
-        <img
-          alt="Victorian Divider"
-          class="mx-auto h-12 w-auto opacity-100 brightness-150 saturate-200"
-          src="https://lh3.googleusercontent.com/aida/ADBb0uj1L0i5AnD3mKGWvHiNhTsMSucqgIFBP9woOIaj3cQtU10lFUmxdVvk-36A-yiEy3io0CtGjCJuP9H4cTKyWOriNOqAZLsT5jqda1UMdDXKqRRA5yIb0M9JtyJ4pgc2cpO9jgzxn66ybSYpHolToeTWYq8bme8IFs1wNhlrK9zGvxboMK9T20zQz2clmLl8rYQ86ksbyMIFXRt1oPXq4-yVGtcnQFArcD26C_Y4_K7jm7rfnoSVk5cNQyI"
-        />
-      </div>
-      <!-- FORMULARIO (BARRA LIBRE) -->
-      <section
-        id="confirmar"
-        class="bg-[#0E0E11] py-[128px] border-y border-[#1C1E22]"
-      >
-        <div class="max-w-md mx-auto px-margin-mobile text-center">
-          <h2
-            class="font-headline-lg text-headline-lg-mobile mb-12 text-[#e9e1d8] scroll-reveal"
-          >
-            La Alquimia del
-            <span
-              class="italic text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
-              >Brindis</span
-            >
-          </h2>
-          <form
-            id="confirmation-form"
-            class="space-y-12 text-left bg-[#1C1E22] p-8 rounded scroll-reveal"
-          >
-            <div class="space-y-4">
-              <label
-                class="font-label-sm text-label-sm text-[#3A3D42] block uppercase tracking-widest"
-                >NOMBRE</label
-              >
-              <input
-                id="name"
-                class="w-full bg-transparent border-0 border-b border-[#3A3D42] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#e9e1d8] placeholder:opacity-20 py-4 transition-all"
-                placeholder="Tu nombre..."
-                type="text"
-                required
-              />
-            </div>
-            <div class="space-y-4">
-              <label
-                class="font-label-sm text-label-sm text-[#3A3D42] block uppercase tracking-widest"
-                >EMAIL</label
-              >
-              <input
-                id="email"
-                class="w-full bg-transparent border-0 border-b border-[#3A3D42] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#e9e1d8] placeholder:opacity-20 py-4 transition-all"
-                placeholder="tu@email.com"
-                type="email"
-                required
-              />
-            </div>
-            <div class="space-y-4">
-              <label
-                class="font-label-sm text-label-sm text-[#3A3D42] block uppercase tracking-widest"
-                >¿QUÉ TE GUSTARÍA BEBER?</label
-              >
-              <input
-                id="drink"
-                class="w-full bg-transparent border-0 border-b border-[#3A3D42] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#e9e1d8] placeholder:opacity-20 py-4 transition-all"
-                placeholder="Tu elixir de preferencia..."
-                type="text"
-              />
-            </div>
-            <div class="space-y-4">
-              <label
-                class="font-label-sm text-label-sm text-[#3A3D42] block uppercase tracking-widest"
-                >¿PREFERENCIAS PARA LA BARRA LIBRE?</label
-              >
-              <textarea
-                id="preferences"
-                class="w-full bg-transparent border-0 border-b border-[#3A3D42] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#e9e1d8] placeholder:opacity-20 py-4 h-32 transition-all resize-none"
-                placeholder="Detalla tus rituales etílicos..."
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              class="w-full font-label-sm text-label-sm py-6 border border-[#E5C17E] text-[#E5C17E] hover:bg-[#E5C17E] hover:text-[#0E0E11] hover:shadow-[0_0_15px_rgba(229,193,126,0.4)] transition-all duration-500 uppercase tracking-widest"
-            >
-              Enviar Petición
-            </button>
-          </form>
-          <div
-            id="form-success"
-            class="hidden mt-8 p-6 bg-[#E5C17E]/10 border border-[#E5C17E]/30 rounded"
-          >
-            <p class="font-body-md text-[#E5C17E] text-center">
-              Tu petición ha sido enviada al umbral. Espera nuestra respuesta.
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- GALERÍA (ARCHIVE) -->
-      <section
-        id="galeria"
-        class="py-[128px] px-margin-mobile overflow-hidden bg-[#16181D]"
-      >
-        <div class="max-w-container-max mx-auto">
-          <div class="mb-16 scroll-reveal">
-            <h2
-              class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#e9e1d8]"
-            >
-              El
-              <span
-                class="italic text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
-                >Testigo</span
-              >
-            </h2>
-            <p class="font-body-md text-body-md text-[#3A3D42] mt-4">
-              Tras el evento, se abrirá el archivo. Por ahora, solo queda el
-              rastro de lo que vendrá.
-            </p>
-          </div>
-          <div
-            class="grid grid-cols-2 md:grid-cols-4 gap-4 opacity-30 grayscale blur-[2px] pointer-events-none"
-          >
-            <div class="aspect-square bg-[#1C1E22] rounded"></div>
-            <div class="aspect-[3/4] bg-[#1C1E22] row-span-2 rounded"></div>
-            <div class="aspect-square bg-[#1C1E22] rounded"></div>
-            <div class="aspect-square bg-[#1C1E22] rounded"></div>
-            <div class="aspect-[3/2] bg-[#1C1E22] col-span-2 rounded"></div>
-            <div class="aspect-square bg-[#1C1E22] rounded"></div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- FOOTER -->
-    <footer
-      class="w-full py-[128px] bg-[#0E0E11] border-t border-[#1C1E22] bg-grain flex flex-col items-center space-y-8 text-center px-margin-mobile"
-    >
-      <div class="flex justify-center items-center mb-8 px-margin-mobile">
-        <img
-          alt="Victorian Crest Divider"
-          class="mx-auto h-12 w-auto opacity-100 brightness-150 saturate-200"
-          src="https://lh3.googleusercontent.com/aida/ADBb0ujvy2wBiYAJVd7_GQgOxo4vMh-GW_83D_Nm4q3NmG8c9XFHy-qzdxfEbs5dgCE_FRflWvtj6pjPnxRfNIujt5v-2tb01TWmJ3YEc-_5He92WeqJVTY3wWzeGtR-3oqhtrxpkG0fof5IxIT4TXkx_KYESi7PGQg_5g1hAzv230cUg2zXH3ytU6CpQXr9STrSsprc1gNOEx9myqZkgr4L-2Umt1tpieUrSedK3Zo9jWaD2ls1hh2Fm_MlnrI"
-        />
-      </div>
-      <div
-        class="font-display-lg text-display-lg text-[#E5C17E] opacity-30 mb-12 drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
-      >
-        Jeny &amp; Víctor
-      </div>
-      <div class="flex space-x-gutter mb-12">
-        <a
-          class="font-body-md text-body-md text-[#e9e1d8] hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-700"
-          href="#normas"
-          >Protocolo</a
-        >
-        <a
-          class="font-body-md text-body-md text-[#e9e1d8] hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-700"
-          href="https://maps.google.com"
-          target="_blank"
-          >Ubicación</a
-        >
-        <a
-          class="font-body-md text-body-md text-[#e9e1d8] hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-700"
-          href="mailto:victor.vxg@gmail.com"
-          >Contacto</a
-        >
-      </div>
-      <p
-        class="font-label-sm text-label-sm text-[#3A3D42] uppercase tracking-widest"
-      >
-        Octubre XXXI — MMXIV. El umbral se ha cerrado.
-      </p>
-    </footer>
 
-    <!-- MUSIC SUGGESTION MODAL -->
-    <div
-      id="music-modal"
-      class="modal-overlay fixed inset-0 z-50 bg-[#0E0E11]/90 flex items-center justify-center p-4"
-    >
-      <div
-        class="modal-content bg-[#1C1E22] p-8 rounded max-w-md w-full border border-[#1C1E22]"
-      >
-        <div class="flex justify-between items-center mb-6">
-          <h3 class="font-headline-md text-[#e9e1d8]">Sugerir Pieza Musical</h3>
-          <button
-            id="close-modal-btn"
-            class="text-[#3A3D42] hover:text-[#E5C17E]"
-          >
-            <span class="material-symbols-outlined">close</span>
-          </button>
+        <!-- Couple name -->
+        <h1 class="font-display-lg text-[64px] md:text-[80px] text-[#e9e1d8] leading-none tracking-tighter italic">
+          Jeny
+          <span class="not-italic text-[#E5C17E] drop-shadow-[0_0_10px_rgba(229,193,126,0.5)]">&amp;</span>
+          Víctor
+        </h1>
+
+        <!-- Status -->
+        <div class="space-y-4">
+          <p class="font-headline-md text-3xl md:text-4xl text-[#E5C17E] tracking-wide uppercase drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]">
+            Próximamente
+          </p>
+          <p class="font-body-md text-lg text-[#e9e1d8] opacity-75 italic max-w-md mx-auto">
+            "El Umbral se está preparando. Cuando la luna envuelva la luz, las puertas se abrirán."
+          </p>
         </div>
-        <form id="music-form" class="space-y-6">
-          <div class="space-y-4">
-            <label
-              class="font-label-sm text-label-sm text-[#3A3D42] block uppercase tracking-widest"
-              >NOMBRE</label
-            >
-            <input
-              id="music-name"
-              class="w-full bg-transparent border-0 border-b border-[#3A3D42] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#e9e1d8] placeholder:opacity-20 py-4 transition-all"
-              placeholder="Tu nombre..."
-              type="text"
-              required
-            />
-          </div>
-          <div class="space-y-4">
-            <label
-              class="font-label-sm text-label-sm text-[#3A3D42] block uppercase tracking-widest"
-              >CANCIÓN</label
-            >
-            <input
-              id="song-name"
-              class="w-full bg-transparent border-0 border-b border-[#3A3D42] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#e9e1d8] placeholder:opacity-20 py-4 transition-all"
-              placeholder="Nombre de la canción..."
-              type="text"
-              required
-            />
-          </div>
-          <div class="space-y-4">
-            <label
-              class="font-label-sm text-label-sm text-[#3A3D42] block uppercase tracking-widest"
-              >ARTISTA</label
-            >
-            <input
-              id="artist-name"
-              class="w-full bg-transparent border-0 border-b border-[#3A3D42] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#e9e1d8] placeholder:opacity-20 py-4 transition-all"
-              placeholder="Nombre del artista..."
-              type="text"
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            class="w-full font-label-sm text-label-sm py-6 border border-[#E5C17E] text-[#E5C17E] hover:bg-[#E5C17E] hover:text-[#0E0E11] hover:shadow-[0_0_15px_rgba(229,193,126,0.4)] transition-all duration-500 uppercase tracking-widest"
-          >
-            Enviar Sugerencia
-          </button>
-        </form>
-        <div
-          id="music-success"
-          class="hidden mt-6 p-4 bg-[#E5C17E]/10 border border-[#E5C17E]/30 rounded"
-        >
-          <p class="font-body-md text-[#E5C17E] text-center">
-            Tu sugerencia ha sido enviada al ritual sonoro.
+
+        <!-- Event Summary -->
+        <div class="border-y border-[#1C1E22] py-6 space-y-2">
+          <p class="font-body-md text-sm uppercase tracking-widest text-[#3A3D42]">
+            Sábado, 31 de octubre de 2026
+          </p>
+          <p class="font-headline-md text-xl text-[#e9e1d8]">
+            Finca Torre Pilar · Garrapinillos
           </p>
         </div>
       </div>
-    </div>
+    </main>
 
-    <!-- FAB -->
-    <button
-      id="fab"
-      class="fixed bottom-8 right-8 bg-[#E5C17E] text-[#0E0E11] w-16 h-16 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(229,193,126,0.6)] z-50 hover:scale-110 hover:shadow-[0_0_30px_rgba(229,193,126,0.8)] transition-all active:scale-95 md:hidden animate-pulse-glow"
-    >
-      <span
-        class="material-symbols-outlined"
-        style="font-variation-settings: 'FILL' 1"
-        >calendar_today</span
-      >
-    </button>
+    <!-- Footer -->
+    <footer class="w-full py-8 border-t border-[#1C1E22] text-center z-10 bg-[#0E0E11]">
+      <p class="font-label-sm text-xs text-[#3A3D42] uppercase tracking-widest">
+        El Umbral · MMXXVI
+      </p>
+    </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Interactive Glow Script -->
+    <script>
+      const glows = document.querySelectorAll('.eclipse-glow');
+      document.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth - 0.5;
+        const y = e.clientY / window.innerHeight - 0.5;
+        glows.forEach((glow, index) => {
+          const speed = (index + 1) * 20;
+          glow.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+        });
+      });
+    </script>
   </body>
 </html>
