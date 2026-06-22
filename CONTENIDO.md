@@ -71,7 +71,7 @@
 1. Lista para despueste de comer - El Aquelarre:
 
 - Link: https://open.spotify.com/playlist/48mX6kMAekDqoErHHxnFrU?si=vP3Cm7zyR8uOT2Bo8mbnlQ
-- Lin k colaborador: https://open.spotify.com/playlist/48mX6kMAekDqoErHHxnFrU?si=63b21afffa794e51&pt=ed499f9e59a2445620b9e938917d479d
+- Link colaborador: https://open.spotify.com/playlist/48mX6kMAekDqoErHHxnFrU?si=63b21afffa794e51&pt=ed499f9e59a2445620b9e938917d479d
 - iFrame:
 
 ```html

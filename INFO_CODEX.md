@@ -16,9 +16,10 @@ La web no usa framework de aplicacion ni proceso de build. Se abre directamente 
 - **Tailwind CSS por CDN**:
   - `https://cdn.tailwindcss.com?plugins=forms,container-queries`
 - **Fuentes externas de Google Fonts**:
-  - `Bodoni Moda`
-  - `Hanken Grotesk`
-  - `Material Symbols Outlined`
+  - `Bonheur Royale` (Para títulos principales h1 / display-lg)
+  - `Bodoni Moda` (Para otros encabezados)
+  - `Hanken Grotesk` (Para cuerpo de texto y etiquetas)
+  - `Material Symbols Outlined` (Para iconos)
 - **Imagenes ornamentales remotas** desde `lh3.googleusercontent.com`.
 
 No hay `package.json`, dependencias locales, compilador, servidor de desarrollo ni backend activo.
@@ -309,8 +310,9 @@ Direccion de arte:
 
 - Oscura, solemne y ceremonial.
 - Toques goticos/victorianos.
-- Tipografia serif ornamental para titulos.
-- Tipografia sans para cuerpo y etiquetas.
+- Tipografia caligrafica fluida (`Bonheur Royale`) para titulos principales (h1).
+- Tipografia serif ornamental (`Bodoni Moda`) para otros encabezados.
+- Tipografia sans (`Hanken Grotesk`) para cuerpo y etiquetas.
 - Brillos dorados, divisores ornamentales y textura de grano.
 
 ## Dependencias externas y riesgos
