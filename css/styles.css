@@ -14,15 +14,15 @@ body {
 
 .bg-grain::before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.04;
+  opacity: 1;
   pointer-events: none;
-  background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAllX7J7kcvWENCV2zY0cocIRHGb1K_MIdhkVYUUt1a9EGnfxSTzVr756-QhjXRCvYb45gSHdmQXLmHKp6L4zEAfakKCrklYkuIXva__yhj8zOOju14pVYilblYg1-kvyYitMMljuDMdVv6H35n5r6z-qoKCifX3FPpCLOskWsUykE-fYeM_grFtJf7Okpjob9v2ttJOU8jylZG0OqGMqIWpgxMxrSUZFa2wkGMiK4GCZ04aHprTTgD_HSPQS242mhXh7Avr6fMbAw);
-  z-index: 1;
+  background-image: url('../img/web_background.jpg');
+  z-index: -1;
 }
 
 .eclipse-glow {

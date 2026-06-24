@@ -15,20 +15,20 @@
     />
     <script id="tailwind-config">
       tailwind.config = {
-        darkMode: 'class',
+        darkMode: "class",
         theme: {
           extend: {
             colors: {
-              'on-background': '#e9e1d8',
-              'on-surface': '#e9e1d8',
-              background: '#16130e',
-              primary: '#e9c176',
+              "on-background": "#e9e1d8",
+              "on-surface": "#e9e1d8",
+              background: "#16130e",
+              primary: "#e9c176",
             },
             fontFamily: {
-              'body-md': ['Hanken Grotesk'],
-              'headline-lg': ['Bodoni Moda'],
-              'display-lg': ['Bonheur Royale', 'cursive'],
-              'headline-md': ['Bodoni Moda'],
+              "body-md": ["Hanken Grotesk"],
+              "headline-lg": ["Bodoni Moda"],
+              "display-lg": ["Bonheur Royale", "cursive"],
+              "headline-md": ["Bodoni Moda"],
             },
           },
         },
@@ -39,17 +39,28 @@
   <body
     class="bg-[#0E0E11] selection:bg-[#E5C17E]/20 selection:text-[#E5C17E] min-h-screen flex flex-col justify-between"
   >
-    <main class="bg-grain flex-grow flex flex-col justify-center items-center relative overflow-hidden px-5 py-12">
+    <main
+      class="bg-grain flex-grow flex flex-col justify-center items-center relative overflow-hidden px-5 py-12"
+    >
       <!-- Glow elements -->
       <div class="absolute inset-0 z-0 pointer-events-none">
-        <div class="eclipse-glow absolute top-1/4 -left-1/4 w-[600px] h-[600px] animate-float"></div>
-        <div class="eclipse-glow absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] animate-float" style="animation-delay: -2s;"></div>
+        <div
+          class="eclipse-glow absolute top-1/4 -left-1/4 w-[600px] h-[600px] animate-float"
+        ></div>
+        <div
+          class="eclipse-glow absolute bottom-1/4 -right-1/4 w-[600px] h-[600px] animate-float"
+          style="animation-delay: -2s"
+        ></div>
       </div>
 
       <!-- Main content card -->
-      <div class="relative z-10 max-w-lg w-full text-center space-y-12 animate-reveal">
+      <div
+        class="relative z-10 max-w-lg w-full text-center space-y-12 animate-reveal"
+      >
         <!-- Date in Roman numerals -->
-        <span class="font-label-sm text-sm text-[#3A3D42] block uppercase tracking-widest">
+        <span
+          class="font-label-sm text-sm text-[#3A3D42] block uppercase tracking-widest"
+        >
           OCTUBRE XXXI — MMXXVI
         </span>
 
@@ -57,31 +68,43 @@
         <div class="flex justify-center">
           <img
             alt="Victorian Crest Divider"
-            class="h-10 w-auto opacity-80 brightness-150 saturate-200"
-            src="https://lh3.googleusercontent.com/aida/ADBb0ujvy2wBiYAJVd7_GQgOxo4vMh-GW_83D_Nm4q3NmG8c9XFHy-qzdxfEbs5dgCE_FRflWvtj6pjPnxRfNIujt5v-2tb01TWmJ3YEc-_5He92WeqJVTY3wWzeGtR-3oqhtrxpkG0fof5IxIT4TXkx_KYESi7PGQg_5g1hAzv230cUg2zXH3ytU6CpQXr9STrSsprc1gNOEx9myqZkgr4L-2Umt1tpieUrSedK3Zo9jWaD2ls1hh2Fm_MlnrI"
+            class="h-auto w-100 opacity-80"
+            src="./img/DivisorSuperior.png"
           />
         </div>
 
         <!-- Couple name -->
-        <h1 class="font-display-lg text-[64px] md:text-[80px] text-[#e9e1d8] leading-none tracking-tighter italic">
+        <h1
+          class="font-display-lg text-[64px] md:text-[80px] text-[#e9e1d8] leading-none tracking-tighter italic"
+        >
           Víctor
-          <span class="not-italic text-[#E5C17E] drop-shadow-[0_0_10px_rgba(229,193,126,0.5)]">y</span>
+          <span
+            class="not-italic text-[#E5C17E] drop-shadow-[0_0_10px_rgba(229,193,126,0.5)]"
+            >y</span
+          >
           Jeny
         </h1>
 
         <!-- Status -->
         <div class="space-y-4">
-          <p class="font-headline-md text-3xl md:text-4xl text-[#E5C17E] tracking-wide uppercase drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]">
+          <p
+            class="font-headline-md text-3xl md:text-4xl text-[#E5C17E] tracking-wide uppercase drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
+          >
             Próximamente
           </p>
-          <p class="font-body-md text-lg text-[#e9e1d8] opacity-75 italic max-w-md mx-auto">
-            "El Umbral se está preparando. Cuando la luna envuelva la luz, las puertas se abrirán."
+          <p
+            class="font-body-md text-lg text-[#e9e1d8] opacity-75 italic max-w-md mx-auto"
+          >
+            "El Umbral se está preparando. Cuando la luna envuelva la luz, las
+            puertas se abrirán."
           </p>
         </div>
 
         <!-- Event Summary -->
         <div class="border-y border-[#1C1E22] py-6 space-y-2">
-          <p class="font-body-md text-sm uppercase tracking-widest text-[#3A3D42]">
+          <p
+            class="font-body-md text-sm uppercase tracking-widest text-[#3A3D42]"
+          >
             Sábado, 31 de octubre de 2026
           </p>
           <p class="font-headline-md text-xl text-[#e9e1d8]">
@@ -92,7 +115,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full py-8 border-t border-[#1C1E22] text-center z-10 bg-[#0E0E11]">
+    <footer
+      class="w-full py-8 border-t border-[#1C1E22] text-center z-10 bg-[#0E0E11]"
+    >
       <p class="font-label-sm text-xs text-[#3A3D42] uppercase tracking-widest">
         El Umbral · MMXXVI
       </p>
@@ -100,8 +125,8 @@
 
     <!-- Interactive Glow Script -->
     <script>
-      const glows = document.querySelectorAll('.eclipse-glow');
-      document.addEventListener('mousemove', (e) => {
+      const glows = document.querySelectorAll(".eclipse-glow");
+      document.addEventListener("mousemove", (e) => {
         const x = e.clientX / window.innerWidth - 0.5;
         const y = e.clientY / window.innerHeight - 0.5;
         glows.forEach((glow, index) => {

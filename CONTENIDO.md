@@ -1,34 +1,6 @@
-### Regalos
+# WEB BODA VICTOR Y JENY
 
-- 2 pasajes para el crucero 70000 Tons of Metal 2027
-  Porque algunas lunas de miel se celebran en silencio, y otras a 120 decibelios rodeados de nuestra gente.
-  Más información: 70000 Tons of Metal - LINK: https://70000tons.com/
-
-- Un viaje orbital para dos personas
-  Para cuando este planeta se nos quede pequeño y necesitemos contemplar el caos desde una distancia prudencial.
-
-- 1 castillo en ruinas
-  Donde cultivar nuestras sombras en paz, lejos del ruido del mundo y cerca de los fantasmas adecuados.
-
-- 1 cueva de hielo
-  Para refugiarnos cuando llegue el verano y recordar que la belleza también habita en el frío.
-
-- Cena en Sublimotion (Ibiza)
-  Porque la realidad está sobrevalorada y una cena debería parecerse más a un sueño que a una reserva.
-  Reservas: Sublimotion Ibiza - LINK: https://www.thesiteibiza.com/es/gastronomia/sublimotion/
-
-- Bajo Ritter Royal Flora Aurum
-  Porque algunas notas merecen viajar por oro y diamentes antes de llegar al alma.
-  Info de sobre el bajo - Link: https://lasvegassun.com/news/2008/jul/30/bass-guitar-will-cost-you-250000/
-
-- Guitarra PRS Private Stock 30th Anniversary Hollowbody I
-  Porque toda historia de amor merece una banda sonora a la altura.
-  Información: PRS Private Stock 30th Anniversary Hollowbody I - lINK: https://www.thomann.es/prs_private_stock_30th_ann_hb_i_2.htm
-
-- 1 lobo
-  Porque hay animales que no se domestican, pero aun así deciden caminar a tu lado.
-
-### 10 mandamientos del Ritual
+## Los diez mandamientos del Ritual
 
 1.  EL CÓDIGO
     Se exige coherencia con el ritual; la etiqueta debe reflejar la solemnidad del encuentro, evitando colores estridentes que rompan la atmósfera del eclipse.
@@ -60,7 +32,53 @@
 10. EL RETORNO
     Todo ritual tiene un final. Cuando llegue el momento de partir, hacedlo con prudencia y aseguraos de que todos los miembros de la congregación encuentren un camino seguro de regreso.
 
-### El eco de la Celebración
+## Ofrendas
+
+- 2 pasajes para el crucero 70000 Tons of Metal 2027
+  Porque algunas lunas de miel se celebran en silencio, y otras a 120 decibelios rodeados de nuestra gente.
+  Más información: 70000 Tons of Metal - LINK: https://70000tons.com/
+  - Icono Font Awesome: fa-solid fa-ship + fa-solid fa-hand-rocks (Combinación) o simplemente fa-solid fa-anchor
+  - Concepto visual: Un barco clásico de pasajeros o un ancla, pero si la web te permite superponer, un barco con la mano de los cuernos del metal es lo suyo.
+
+- Un viaje orbital para dos personas
+  Para cuando este planeta se nos quede pequeño y necesitemos contemplar el caos desde una distancia prudencial.
+  - Icono Font Awesome: fa-solid fa-earth-americas o fa-solid fa-rocket
+  - Concepto visual: El planeta Tierra visto desde fuera o un cohete despegando. La Tierra encaja mejor con la idea de "contemplar el caos desde la distancia".
+
+- 1 castillo en ruinas
+  Donde cultivar nuestras sombras en paz, lejos del ruido del mundo y cerca de los fantasmas adecuados.
+  - Icono Font Awesome: fa-solid fa-fort-awesome o fa-solid fa-chess-rook
+  - Concepto visual: Una torre de castillo o fortaleza. Si la librería es de pago, busca perfiles con almenas desgastadas.
+
+- 1 cueva de hielo
+  Para refugiarnos cuando llegue el verano y recordar que la belleza también habita en el frío.
+  - Icono Font Awesome: fa-solid fa-icicles (si existe en tu librería) o fa-solid fa-snowflake con un efecto de sombra/relieve.
+  - Concepto visual: Estalactitas y estalagmitas. Como estás en oscuro, juega con un borde azulado o blanco muy frío para el contorno.
+
+- Cena en Sublimotion (Ibiza)
+  Porque la realidad está sobrevalorada y una cena debería parecerse más a un sueño que a una reserva.
+  Reservas: Sublimotion Ibiza - LINK: https://www.thesiteibiza.com/es/gastronomia/sublimotion/
+  - Icono Font Awesome: fa-solid fa-utensils o fa-solid fa-wand-magic-sparkles
+  - Concepto visual: Al ser una experiencia futurista y surrealista, unos cubiertos minimalistas o una varita con destellos/estrellas representan ese concepto de "sueño".
+
+- Bajo Ritter Royal Flora Aurum
+  Porque algunas notas merecen viajar por oro y diamentes antes de llegar al alma.
+  Info de sobre el bajo - Link: https://lasvegassun.com/news/2008/jul/30/bass-guitar-will-cost-you-250000/
+  - Icono Font Awesome: fa-solid fa-bass-clef
+  - Concepto visual: La silueta de un instrumento de cuerda eléctrico. Si usas iconos vectoriales personalizados, busca uno que marque cuatro clavijas gruesas en el mástil.
+
+- Guitarra PRS Private Stock 30th Anniversary Hollowbody I
+  Porque toda historia de amor merece una banda sonora a la altura.
+  Información: PRS Private Stock 30th Anniversary Hollowbody I - lINK: https://www.thomann.es/prs_private_stock_30th_ann_hb_i_2.htm
+  - Icono Font Awesome: fa-solid fa-guitar
+  - Concepto visual: Una guitarra con cuerpo curvo tipo Jazz/Hollowbody, o una nota musical elegante si no quieres repetir el icono del bajo.
+
+- 1 lobo
+  Porque hay animales que no se domestican, pero aun así deciden caminar a tu lado.
+  - Icono Font Awesome: fa-solid fa-dog (A falta de lobo explícito en la versión gratuita) o buscar un SVG específico de un lobo aullando.
+  - Concepto visual: La silueta de la cabeza de un lobo de perfil o un lobo aullando a la luna.
+
+## El eco de la Celebración
 
 - Introducción
   Añade lo que quieras escuchar. Bajo tu responsabilidad.
@@ -88,24 +106,34 @@
 ></iframe>
 ```
 
-### El festín
+## El festín
 
 Habrá comida. Habrá bebida. Habrá fuego.
 Las provisiones incluirán opciones para todos los gustos. Nadie quedará sin sustento.
 
 El resto dependerá de vuestro apetito.
 
-1. cocktail
+### Preludios del festín
+- La Sal de la Tierra (jamón en pan con tomate)
+- La Leche de las Montañas (queso)
+- El Engaño de los Dioses (foie vegetal)
+- Fragmentos del Bosque Antiguo (croqueta de shiitake y puerro)
+- Ecos del Mar Ausente (croqueta fish & chips vegana)
+- Lunas Crecientes de Otoño (empanadilla de calabacín, puerro y queso azul)
+- Corazones de la Cosecha (albóndiga de quinoa y calabaza)
+- El Círculo de la Tierra Negra (quiche de champiñones y cebolla caramelizada)
 
-- Jamón serrano y queso
+### El fuego
+- Sacrificio al Fuego Negro (entrecot vegano y patatas asadas)
 
-2. Comida
+### El último rito
+- El Pecado Final (tarta de chocolate y café)
 
-### La Alquimia del Brindis
+## La Alquimia del Brindis
 
-Formulario. Quitar email.
+Formulario para que los invitados envien que les gustaria que hubiera de bebida. Quitar email.
 
-### El Testigo
+## El Testigo
 
 Tras el evento, se abrirá el archivo. Por ahora, solo queda el rastro de lo que vendrá.
 Mirar opciones para que la gente pueda subir fotos.
