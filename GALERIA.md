@@ -31,6 +31,9 @@ graph TD
    * **Opción B: Supabase Storage**
      * *Ventajas:* Base de datos Postgres integrada para guardar metadatos (nombre de quien sube la foto, fecha) y almacenamiento simple (1 GB gratuito).
      * *Desventajas:* Menor optimización de compresión al vuelo comparado con Cloudinary.
+   * **Opción C: Nextcloud propio**
+     * *Ventajas:* Almacenamiento privado y escalable.
+     * *Desventajas:* Mayor complejidad de configuración ¿?.
 
 ---
 
