@@ -330,14 +330,18 @@ Direccion de arte:
 
 ## Tareas pendientes sugeridas
 
-1. Integrar en `index.html` los 10 mandamientos completos de `CONTENIDO.md`.
-2. Decidir si se mantienen solo 3 regalos o se incorporan las demas ofrendas de `CONTENIDO.md`.
-3. Sustituir `https://maps.google.com` por un enlace real a Finca Torre Pilar.
-4. Decidir si los formularios siguen con `mailto:` o pasan a un sistema mas fiable.
-5. Integrar el iframe de Spotify documentado en `CONTENIDO.md`.
-6. Implementar la galeria real siguiendo `GALERIA.md`, si se quiere subida de fotos.
-7. Revisar el texto de fecha/ano para que no parezca inconsistente.
-8. Considerar descargar localmente los ornamentos e imagen de grano para reducir dependencia de enlaces externos.
+- [x] Integrar en `index_landing.html` los **10 mandamientos completos** de `CONTENIDO.md`.
+- [x] Incorporar las **8 ofrendas reales** de `CONTENIDO.md` (sustituyendo las 3 tarjetas placeholder).
+  - [x] Añadir **Font Awesome 6 Free** vía CDN para los iconos de las ofrendas.
+  - [x] Iconos con efecto hover: dorado → rojo `#8b0000` con glow carmesí.
+- [ ] Integrar el **iframe de Spotify** (playlist "El Aquelarre") documentado en `CONTENIDO.md`.
+- [ ] Sustituir `https://maps.google.com` por un enlace real a **Finca Torre Pilar**.
+- [ ] Decidir si los formularios siguen con `mailto:` o pasan a un sistema más fiable (backend/serverless).
+- [ ] Implementar la **galería real** siguiendo `GALERIA.md` (subida de fotos con Cloudinary / Supabase).
+- [ ] Revisar el texto de fecha/año para que no parezca inconsistente (`MMXIV` vs año real).
+- [ ] Considerar descargar localmente los ornamentos e imagen de grano para reducir dependencia de enlaces externos.
+- [ ] Sección **El Festín** — añadir el menú completo de `CONTENIDO.md` (preludios, fuego, último rito).
+- [ ] Sección **La Alquimia del Brindis** — valorar si quitar el campo email según nota en `CONTENIDO.md`.
 
 ## Como trabajar con el proyecto
 
