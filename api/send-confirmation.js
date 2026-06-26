@@ -9,7 +9,7 @@ export async function POST(request) {
     const { data, error } = await resend.emails.send({
       from: 'Boda Jeny & Víctor <onboarding@resend.dev>',
       to: process.env.TO_EMAIL || 'victor.vxg@gmail.com',
-      subject: 'Confirmación de asistencia - Boda Jeny & Víctor',
+      subject: 'Confirmación de bebida - Boda Jeny & Víctor',
       html: `
         <h2>Nueva confirmación de bebida</h2>
         <p><strong>Nombre:</strong> ${name}</p>
@@ -18,11 +18,17 @@ export async function POST(request) {
     });
 
     if (error) {
-      return Response.json({ success: false, error: error.message }, { status: 500 });
+      return Response.json(
+        { success: false, error: error.message },
+        { status: 500 },
+      );
     }
 
     return Response.json({ success: true, data });
   } catch (err) {
-    return Response.json({ success: false, error: err.message }, { status: 500 });
+    return Response.json(
+      { success: false, error: err.message },
+      { status: 500 },
+    );
   }
 }
