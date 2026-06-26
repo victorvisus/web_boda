@@ -78,32 +78,38 @@ const confirmationForm = document.getElementById('confirmation-form');
 const formSuccess = document.getElementById('form-success');
 
 if (confirmationForm) {
-  confirmationForm.addEventListener('submit', (e) => {
+  confirmationForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
     const drink = document.getElementById('drink').value;
     const preferences = document.getElementById('preferences').value;
 
-    const subject = encodeURIComponent('Confirmación de asistencia - Boda Jeny & Víctor');
-    const body = encodeURIComponent(
-      `Nombre: ${name}\n` +
-      `Email: ${email}\n` +
-      `Bebida preferida: ${drink}\n` +
-      `Preferencias barra libre: ${preferences}`
-    );
+    try {
+      const res = await fetch('/api/send-confirmation', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, drink, preferences }),
+      });
 
-    window.location.href = `mailto:victor.vxg@gmail.com?subject=${subject}&body=${body}`;
-    
-    if (formSuccess) {
-      formSuccess.classList.remove('hidden');
+      const data = await res.json();
+
+      if (data.success && formSuccess) {
+        formSuccess.classList.remove('hidden');
+      }
+    } catch (err) {
+      if (formSuccess) {
+        formSuccess.querySelector('p').textContent = 'Error al enviar. Inténtalo de nuevo.';
+        formSuccess.classList.remove('hidden');
+      }
     }
+
     confirmationForm.reset();
-    
+
     setTimeout(() => {
       if (formSuccess) {
         formSuccess.classList.add('hidden');
+        formSuccess.querySelector('p').textContent = 'Tu petición ha sido enviada al umbral. Espera nuestra respuesta.';
       }
     }, 5000);
   });
@@ -114,30 +120,38 @@ const musicForm = document.getElementById('music-form');
 const musicSuccess = document.getElementById('music-success');
 
 if (musicForm) {
-  musicForm.addEventListener('submit', (e) => {
+  musicForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     const name = document.getElementById('music-name').value;
     const song = document.getElementById('song-name').value;
     const artist = document.getElementById('artist-name').value;
 
-    const subject = encodeURIComponent('Sugerencia musical - Boda Jeny & Víctor');
-    const body = encodeURIComponent(
-      `Nombre: ${name}\n` +
-      `Canción: ${song}\n` +
-      `Artista: ${artist}`
-    );
+    try {
+      const res = await fetch('/api/send-music-suggestion', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, song, artist }),
+      });
 
-    window.location.href = `mailto:victor.vxg@gmail.com?subject=${subject}&body=${body}`;
-    
-    if (musicSuccess) {
-      musicSuccess.classList.remove('hidden');
+      const data = await res.json();
+
+      if (data.success && musicSuccess) {
+        musicSuccess.classList.remove('hidden');
+      }
+    } catch (err) {
+      if (musicSuccess) {
+        musicSuccess.querySelector('p').textContent = 'Error al enviar. Inténtalo de nuevo.';
+        musicSuccess.classList.remove('hidden');
+      }
     }
+
     musicForm.reset();
-    
+
     setTimeout(() => {
       if (musicSuccess) {
         musicSuccess.classList.add('hidden');
+        musicSuccess.querySelector('p').textContent = 'Tu sugerencia ha sido enviada al ritual sonoro.';
       }
       closeModal();
     }, 2000);
