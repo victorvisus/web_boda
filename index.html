@@ -535,7 +535,7 @@
         <div class="max-w-container-max mx-auto px-margin-mobile">
           <div class="text-center mb-16 scroll-reveal">
             <h2
-              class="font-display-lg text-headline-lg-mobile md:font-normal md:text-[60px] text-[#f2f3f5]"
+              class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#f2f3f5]"
             >
               Ofrendas
             </h2>
@@ -982,8 +982,8 @@
             </div>
             <div class="space-y-4">
               <label
-                class="font-label-sm text-label-sm text-[#6c717a] block tracking-widest"
-                >¿Qué te gustaria beber?</label
+                class="font-label-sm text-label-sm text-[#6c717a] block uppercase tracking-widest"
+                >¿QUÉ TE GUSTARÍA BEBER?</label
               >
               <textarea
                 id="preferences"
@@ -1073,16 +1073,28 @@
               rastro de lo que vendrá.
             </p>
           </div>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-4 opacity-30 grayscale blur-[2px] pointer-events-none hidden"
+          >
+            <div class="aspect-square bg-[#32363e] rounded"></div>
+            <div class="aspect-[3/4] bg-[#32363e] row-span-2 rounded"></div>
+            <div class="aspect-square bg-[#32363e] rounded"></div>
+            <div class="aspect-square bg-[#32363e] rounded"></div>
+            <div class="aspect-[3/2] bg-[#32363e] col-span-2 rounded"></div>
+            <div class="aspect-square bg-[#32363e] rounded"></div>
+            <div class="aspect-square bg-[#32363e] rounded"></div>
+          </div>
           <div id="gallery-grid" class="hidden"></div>
         </div>
       </section>
     </main>
+
     <!-- FOOTER -->
     <footer
       class="w-full py-[128px] bg-[#0E0E11] border-t border-[#32363e] bg-grain flex flex-col items-center space-y-8 text-center px-margin-mobile"
     >
       <div
-        class="font-display-lg text-[80px] text-[#f2f3f5] mb-12 tracking-tighter italic"
+        class="font-display-lg text-display-lg text-[#f00000] opacity-30 mb-12 drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
       >
         Víctor y Jeny
       </div>
@@ -1136,7 +1148,7 @@
             >
             <input
               id="music-name"
-              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 transition-all"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-60 py-4 transition-all"
               placeholder="Tu nombre..."
               type="text"
               required
@@ -1149,7 +1161,7 @@
             >
             <input
               id="song-name"
-              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 transition-all"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-60 py-4 transition-all"
               placeholder="Nombre de la canción..."
               type="text"
               required
@@ -1162,7 +1174,7 @@
             >
             <input
               id="artist-name"
-              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 transition-all"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-60 py-4 transition-all"
               placeholder="Nombre del artista..."
               type="text"
               required
@@ -1211,7 +1223,7 @@
             >
             <input
               id="contact-name"
-              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 transition-all"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-60 py-4 transition-all"
               placeholder="Tu nombre..."
               type="text"
               required
@@ -1224,7 +1236,7 @@
             >
             <input
               id="contact-email"
-              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 transition-all"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-60 py-4 transition-all"
               placeholder="tu@email.com"
               type="email"
             />
@@ -1236,7 +1248,7 @@
             >
             <textarea
               id="contact-message"
-              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 h-32 transition-all resize-none"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-60 py-4 h-32 transition-all resize-none"
               placeholder="Escribe tu mensaje..."
               required
             ></textarea>

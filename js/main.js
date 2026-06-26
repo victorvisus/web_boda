@@ -6,8 +6,8 @@ const mobileMenuLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
 
 if (mobileMenuBtn) {
   mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
   });
 }
 
@@ -32,7 +32,8 @@ if (mobileMenuLinks) {
 const fab = document.getElementById('fab');
 if (fab) {
   fab.addEventListener('click', () => {
-    document.getElementById('confirmar').scrollIntoView({ behavior: 'smooth' });
+    const form = document.getElementById('confirmation-form');
+    if (form) form.scrollIntoView({ behavior: 'smooth' });
   });
 }
 
