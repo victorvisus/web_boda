@@ -33,13 +33,16 @@ web_boda/
 │   └── styles.css
 ├── js/
 │   └── main.js
+├── api/
+│   └── (futuros endpoints serverless)
 ├── README.md
 ├── CONTENIDO.md
 ├── ACTOS.md
 ├── GALERIA.md
-├── artistas_titulos.csv
-├── lista_ChatGTP.csv
-└── lista_Boda.txt
+├── BSO_artistas_titulos.csv
+├── package.json
+├── vercel.json
+└── .gitignore
 ```
 
 ## Archivo principal: index.html
@@ -55,7 +58,7 @@ Secciones principales:
 
 1. **Navigation Shell**
    - Cabecera fija.
-   - Menu desktop con anclas a `#normas`, `#regalos`, `#musica`, `#confirmar` y `#galeria`.
+   - Menu desktop con anclas a `#normas`, `#ofrendas`, `#musica`, `#elixires`, `#galeria` y `#ubicacion`.
    - Boton de llamada a la accion: `Estais convocados`.
    - Menu movil tipo pantalla completa.
 
@@ -67,45 +70,40 @@ Secciones principales:
    - Lugar: `Finca Torre Pilar`, `Garrapinillos - Zaragoza`.
 
 3. **Normas**
-   - Actualmente muestra solo los tres primeros mandamientos:
-     - `01. EL CODIGO`
-     - `02. LA PRESENCIA`
-     - `03. EL SILENCIO DIGITAL`
-   - El archivo `CONTENIDO.md` contiene los 10 mandamientos completos.
+   - Muestra los 10 mandamientos completos del Ritual.
+   - Lista vertical con borde lateral izquierdo dorado.
 
-4. **Regalos / Ofrendas**
-   - Muestra 3 tarjetas:
-     - Cena en el restaurante mas caro del mundo.
-     - Viaje orbital.
-     - Castillo en ruinas con potencial.
-   - `CONTENIDO.md` contiene mas ideas de regalos que todavia no estan integradas en el HTML.
+4. **Ofrendas**
+   - Muestra 8 tarjetas con todas las ideas de regalo de `CONTENIDO.md`.
+   - Iconos de Font Awesome con hover: dorado → rojo (#f00000).
+   - Grid responsive (4 col desktop, 2 tablet, 1 mobile).
 
 5. **Musica**
    - Seccion `El eco de la Celebracion`.
-   - Boton `Sugerir una pieza`.
-   - Abre un modal con formulario de sugerencia musical.
-   - No hay iframe de Spotify integrado en el HTML actual, aunque `CONTENIDO.md` incluye un iframe previsto.
+   - Embed de Spotify con la playlist "El Aquelarre".
+   - Boton `Añadirte como colaborador de la lista` (enlace a playlist colaborativa).
+   - Boton `Sugerir una pieza` que abre un modal con formulario de sugerencia musical.
+   - No incluye el acordeon de fases musicales de `ACTOS.md` (pendiente).
 
-6. **Confirmar**
+6. **Elixires**
    - Formulario `La Alquimia del Brindis`.
    - Campos:
      - Nombre.
-     - Email.
-     - Bebida preferida.
-     - Preferencias para barra libre.
-   - El envio abre un correo mediante `mailto:`.
+     - Bebida preferida (textarea).
+   - Sin campo email (eliminado segun nota de `CONTENIDO.md`).
+   - El envio usa `fetch` a `/api/send-confirmation` (serverless sin implementar).
 
 7. **Galeria**
-   - Seccion `El Testigo`.
-   - Actualmente es un placeholder visual con bloques grises, desenfocados y sin interaccion.
+   - Seccion `El Testigo` (id `#galeria`).
+   - Placeholder visual con cuadricula de bloques grises desenfocados (blur + grayscale).
    - `GALERIA.md` documenta una futura galeria real con subida de fotos.
 
 8. **Footer**
-   - Logo textual `Jeny & Victor`.
+   - Logo textual `Victor y Jeny`.
    - Enlaces:
-     - Protocolo.
-     - Ubicacion: `https://maps.google.com`.
-     - Contacto: `mailto:victor.vxg@gmail.com`.
+     - Protocolo (`#normas`).
+     - Ubicacion: `https://maps.app.goo.gl/72hJFekuA1QU3JvEA` (pin real de Finca Torre Pilar).
+     - Contacto: modal con formulario (sin `mailto:`).
 
 9. **Modal musical**
    - Formulario con nombre, cancion y artista.
@@ -154,21 +152,20 @@ El JavaScript gestiona la interaccion de la pagina sin librerias externas.
 Funcionalidades:
 
 - Abrir y cerrar el menu movil.
-- Cerrar el menu movil al pulsar un enlace.
+- Cerrar el menu movil al pulsar un enlace o el mismo boton de apertura.
 - Scroll suave al formulario desde:
   - Boton CTA desktop.
-  - Boton flotante movil.
+  - Boton flotante movil (FAB).
 - Abrir y cerrar el modal de sugerencias musicales.
 - Cerrar el modal al pulsar fuera del contenido.
-- Enviar el formulario de confirmacion mediante `mailto:victor.vxg@gmail.com`.
-- Enviar el formulario musical mediante `mailto:victor.vxg@gmail.com`.
+- Enviar formularios mediante `fetch` a `/api/*` (serverless sin implementar).
 - Mostrar mensajes de exito temporales tras los envios.
 - Animar elementos `.scroll-reveal` al entrar en pantalla.
 - Aplicar parallax suave al texto del hero.
 - Cambiar el estilo del header al hacer scroll.
 - Mover los brillos atmosfericos segun la posicion del raton.
 
-Punto importante: los formularios no guardan datos en ningun servidor. Solo abren el cliente de correo del usuario.
+Punto importante: los formularios envian mediante `fetch` a endpoints `/api/*`, pero los serverless functions aun no estan implementadas.
 
 ## Contenido editorial
 
@@ -330,18 +327,20 @@ Direccion de arte:
 
 ## Tareas pendientes sugeridas
 
-- [x] Integrar en `index_landing.html` los **10 mandamientos completos** de `CONTENIDO.md`.
+- [x] Integrar los **10 mandamientos completos** de `CONTENIDO.md`.
 - [x] Incorporar las **8 ofrendas reales** de `CONTENIDO.md` (sustituyendo las 3 tarjetas placeholder).
   - [x] Añadir **Font Awesome 6 Free** vía CDN para los iconos de las ofrendas.
-  - [x] Iconos con efecto hover: dorado → rojo `#8b0000` con glow carmesí.
-- [ ] Integrar el **iframe de Spotify** (playlist "El Aquelarre") documentado en `CONTENIDO.md`.
-- [ ] Sustituir `https://maps.google.com` por un enlace real a **Finca Torre Pilar**.
-- [ ] Decidir si los formularios siguen con `mailto:` o pasan a un sistema más fiable (backend/serverless).
+  - [x] Iconos con efecto hover: dorado → rojo `#f00000` con glow.
+- [x] Integrar el **iframe de Spotify** (playlist "El Aquelarre") documentado en `CONTENIDO.md`.
+- [x] Sustituir `https://maps.google.com` por un enlace real a **Finca Torre Pilar**.
+- [x] Migrar forms de `mailto:` a `fetch` (endpoints serverless pendientes de implementar).
+- [x] Corregir `MMXIV` → `MMXXVI` en la fecha romana.
+- [x] Sección **El Festín** — añadir el menú completo de `CONTENIDO.md` (preludios, fuego, último rito).
+- [x] Sección **La Alquimia del Brindis** — eliminar campo email según nota en `CONTENIDO.md`.
 - [ ] Implementar la **galería real** siguiendo `GALERIA.md` (subida de fotos con Cloudinary / Supabase).
-- [ ] Revisar el texto de fecha/año para que no parezca inconsistente (`MMXIV` vs año real).
+- [ ] Añadir **acordeón de fases musicales** de `ACTOS.md` («El Viaje Sonoro»: Invocación → Eclipse → Despertar → Fuego → Regreso).
+- [ ] Implementar **endpoints serverless** `/api/send-confirmation`, `/api/send-music-suggestion` y `/api/send-contact`.
 - [ ] Considerar descargar localmente los ornamentos e imagen de grano para reducir dependencia de enlaces externos.
-- [ ] Sección **El Festín** — añadir el menú completo de `CONTENIDO.md` (preludios, fuego, último rito).
-- [ ] Sección **La Alquimia del Brindis** — valorar si quitar el campo email según nota en `CONTENIDO.md`.
 
 ## Como trabajar con el proyecto
 
