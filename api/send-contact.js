@@ -4,16 +4,18 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
   try {
-    const { name, preferences } = await request.json();
+    const { name, email, message } = await request.json();
 
     const { data, error } = await resend.emails.send({
       from: 'Boda Jeny & Víctor <onboarding@resend.dev>',
       to: process.env.TO_EMAIL || 'victor.vxg@gmail.com',
-      subject: 'Confirmación de asistencia - Boda Jeny & Víctor',
+      subject: 'Mensaje de contacto - Boda Jeny & Víctor',
       html: `
-        <h2>Nueva confirmación de bebida</h2>
+        <h2>Nuevo mensaje de contacto</h2>
         <p><strong>Nombre:</strong> ${name}</p>
-        <p><strong>Tipo de bebida y marca:</strong> ${preferences}</p>
+        <p><strong>Email:</strong> ${email || 'No especificado'}</p>
+        <p><strong>Mensaje:</strong></p>
+        <p>${message}</p>
       `,
     });
 

@@ -82,14 +82,13 @@ if (confirmationForm) {
     e.preventDefault();
     
     const name = document.getElementById('name').value;
-    const drink = document.getElementById('drink').value;
     const preferences = document.getElementById('preferences').value;
 
     try {
       const res = await fetch('/api/send-confirmation', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, drink, preferences }),
+        body: JSON.stringify({ name, preferences }),
       });
 
       const data = await res.json();
@@ -155,6 +154,76 @@ if (musicForm) {
       }
       closeModal();
     }, 2000);
+  });
+}
+
+// Contact Modal
+const contactModal = document.getElementById('contact-modal');
+const contactLink = document.getElementById('contact-link');
+const closeContactModalBtn = document.getElementById('close-contact-modal-btn');
+const contactForm = document.getElementById('contact-form');
+const contactSuccess = document.getElementById('contact-success');
+
+if (contactLink && contactModal) {
+  contactLink.addEventListener('click', () => {
+    contactModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+}
+
+const closeContactModal = () => {
+  if (contactModal) {
+    contactModal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+};
+
+if (closeContactModalBtn) {
+  closeContactModalBtn.addEventListener('click', closeContactModal);
+}
+
+if (contactModal) {
+  contactModal.addEventListener('click', (e) => {
+    if (e.target === contactModal) closeContactModal();
+  });
+}
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('contact-name').value;
+    const email = document.getElementById('contact-email').value;
+    const message = document.getElementById('contact-message').value;
+
+    try {
+      const res = await fetch('/api/send-contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      const data = await res.json();
+
+      if (data.success && contactSuccess) {
+        contactSuccess.classList.remove('hidden');
+      }
+    } catch (err) {
+      if (contactSuccess) {
+        contactSuccess.querySelector('p').textContent = 'Error al enviar. Inténtalo de nuevo.';
+        contactSuccess.classList.remove('hidden');
+      }
+    }
+
+    contactForm.reset();
+
+    setTimeout(() => {
+      if (contactSuccess) {
+        contactSuccess.classList.add('hidden');
+        contactSuccess.querySelector('p').textContent = 'Tu mensaje ha sido enviado. Te responderemos en breve.';
+      }
+      closeContactModal();
+    }, 3000);
   });
 }
 

@@ -204,6 +204,11 @@
           href="#galeria"
           >Galería</a
         >
+        <a
+          class="font-label-sm text-label-sm text-[#f2f3f5] opacity-70 hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-500 uppercase"
+          href="#ubicacion"
+          >Ubicación</a
+        >
       </nav>
       <button
         id="cta-button"
@@ -249,6 +254,11 @@
         class="font-headline-lg text-[#f2f3f5] hover:text-[#E5C17E] transition-all duration-300"
         href="#galeria"
         >Galería</a
+      >
+      <a
+        class="font-headline-lg text-[#f2f3f5] hover:text-[#E5C17E] transition-all duration-300"
+        href="#ubicacion"
+        >Ubicación</a
       >
     </div>
 
@@ -842,7 +852,7 @@
             </div>
             <div class="text-center">
               <a
-                href="https://open.spotify.com/playlist/3nwsL37X1bg7LiCW5LUlgg?si=9229f364efda49e1&pt=68339b53d8f59fa042ac173e2d7a26b6"
+                href="https://open.spotify.com/playlist/48mX6kMAekDqoErHHxnFrU?si=63b21afffa794e51&pt=ed499f9e59a2445620b9e938917d479d"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="font-body-md text-body-md text-[#6c717a] hover:text-[#E5C17E] transition-colors inline-flex items-center gap-2"
@@ -985,14 +995,6 @@
           </div>
         </div>
       </section>
-      <!-- MINIMAL ARCHITECTURAL DIVIDER -->
-      <div class="py-16 px-margin-mobile">
-        <img
-          alt="Victorian Divider"
-          class="mx-auto h-12 w-auto opacity-100 brightness-150 saturate-200"
-          src="https://lh3.googleusercontent.com/aida/ADBb0uj1L0i5AnD3mKGWvHiNhTsMSucqgIFBP9woOIaj3cQtU10lFUmxdVvk-36A-yiEy3io0CtGjCJuP9H4cTKyWOriNOqAZLsT5jqda1UMdDXKqRRA5yIb0M9JtyJ4pgc2cpO9jgzxn66ybSYpHolToeTWYq8bme8IFs1wNhlrK9zGvxboMK9T20zQz2clmLl8rYQ86ksbyMIFXRt1oPXq4-yVGtcnQFArcD26C_Y4_K7jm7rfnoSVk5cNQyI"
-        />
-      </div>
       <!-- FORMULARIO (BARRA LIBRE) -->
       <section
         id="confirmar"
@@ -1028,24 +1030,12 @@
             <div class="space-y-4">
               <label
                 class="font-label-sm text-label-sm text-[#6c717a] block uppercase tracking-widest"
-                >¿QUÉ TE GUSTARÍA BEBER?</label
-              >
-              <input
-                id="drink"
-                class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 transition-all"
-                placeholder="Tu elixir de preferencia..."
-                type="text"
-              />
-            </div>
-            <div class="space-y-4">
-              <label
-                class="font-label-sm text-label-sm text-[#6c717a] block uppercase tracking-widest"
-                >¿PREFERENCIAS PARA LA BARRA LIBRE?</label
+                >TIPO DE BEBIDA Y MARCA</label
               >
               <textarea
                 id="preferences"
                 class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 h-32 transition-all resize-none"
-                placeholder="Detalla tus rituales etílicos..."
+                placeholder="Indica tu tipo de bebida y marca preferida..."
               ></textarea>
             </div>
             <button
@@ -1063,6 +1053,48 @@
               Tu petición ha sido enviada al umbral. Espera nuestra respuesta.
             </p>
           </div>
+        </div>
+      </section>
+      <!-- UBICACIÓN (MAPA) -->
+      <section
+        id="ubicacion"
+        class="py-[128px] max-w-container-max mx-auto px-margin-mobile"
+      >
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-[#f2f3f5]"
+          >
+            El
+            <span
+              class="italic text-[#E5C17E] drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
+              >Escenario</span
+            >
+          </h2>
+          <p class="font-body-md text-body-md text-[#6c717a] mt-4">
+            El ritual tendrá lugar en las coordenadas del destino.
+          </p>
+        </div>
+        <div class="scroll-reveal border border-[#32363e] rounded overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps?q=Finca+Torre+Pilar+Garrapinillos+Zaragoza&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="text-center mt-8 scroll-reveal">
+          <a
+            href="https://maps.app.goo.gl/72hJFekuA1QU3JvEA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-label-sm text-label-sm text-[#E5C17E] border border-[#E5C17E]/60 px-8 py-3 hover:bg-[#E5C17E] hover:text-[#0E0E11] hover:shadow-[0_0_15px_rgba(229,193,126,0.4)] transition-all uppercase tracking-widest inline-flex items-center gap-2"
+          >
+            <i class="fa-solid fa-location-dot"></i>
+            Abrir en Google Maps
+          </a>
         </div>
       </section>
       <!-- GALERÍA (ARCHIVE) -->
@@ -1086,16 +1118,7 @@
               rastro de lo que vendrá.
             </p>
           </div>
-          <div
-            class="grid grid-cols-2 md:grid-cols-4 gap-4 opacity-30 grayscale blur-[2px] pointer-events-none"
-          >
-            <div class="aspect-square bg-[#32363e] rounded"></div>
-            <div class="aspect-[3/4] bg-[#32363e] row-span-2 rounded"></div>
-            <div class="aspect-square bg-[#32363e] rounded"></div>
-            <div class="aspect-square bg-[#32363e] rounded"></div>
-            <div class="aspect-[3/2] bg-[#32363e] col-span-2 rounded"></div>
-            <div class="aspect-square bg-[#32363e] rounded"></div>
-          </div>
+          <div id="gallery-grid" class="hidden"></div>
         </div>
       </section>
     </main>
@@ -1103,13 +1126,7 @@
     <footer
       class="w-full py-[128px] bg-[#0E0E11] border-t border-[#32363e] bg-grain flex flex-col items-center space-y-8 text-center px-margin-mobile"
     >
-      <div class="flex justify-center items-center mb-8 px-margin-mobile">
-        <img
-          alt="Victorian Crest Divider"
-          class="mx-auto h-12 w-auto opacity-100 brightness-150 saturate-200"
-          src="https://lh3.googleusercontent.com/aida/ADBb0ujvy2wBiYAJVd7_GQgOxo4vMh-GW_83D_Nm4q3NmG8c9XFHy-qzdxfEbs5dgCE_FRflWvtj6pjPnxRfNIujt5v-2tb01TWmJ3YEc-_5He92WeqJVTY3wWzeGtR-3oqhtrxpkG0fof5IxIT4TXkx_KYESi7PGQg_5g1hAzv230cUg2zXH3ytU6CpQXr9STrSsprc1gNOEx9myqZkgr4L-2Umt1tpieUrSedK3Zo9jWaD2ls1hh2Fm_MlnrI"
-        />
-      </div>
+
       <div
         class="font-display-lg text-display-lg text-[#E5C17E] opacity-30 mb-12 drop-shadow-[0_0_8px_rgba(229,193,126,0.3)]"
       >
@@ -1128,8 +1145,8 @@
           >Ubicación</a
         >
         <a
-          class="font-body-md text-body-md text-[#f2f3f5] hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-700"
-          href="mailto:victor.vxg@gmail.com"
+          id="contact-link"
+          class="font-body-md text-body-md text-[#f2f3f5] hover:text-[#E5C17E] hover:drop-shadow-[0_0_8px_rgba(229,193,126,0.3)] transition-all duration-700 cursor-pointer"
           >Contacto</a
         >
       </div>
@@ -1210,6 +1227,79 @@
         >
           <p class="font-body-md text-[#E5C17E] text-center">
             Tu sugerencia ha sido enviada al ritual sonoro.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT MODAL -->
+    <div
+      id="contact-modal"
+      class="modal-overlay fixed inset-0 z-50 bg-[#0E0E11]/90 flex items-center justify-center p-4"
+    >
+      <div
+        class="modal-content bg-[#32363e] p-8 rounded max-w-md w-full border border-[#32363e]"
+      >
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="font-headline-md text-[#f2f3f5]">Contacto</h3>
+          <button
+            id="close-contact-modal-btn"
+            class="text-[#6c717a] hover:text-[#E5C17E]"
+          >
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
+        <form id="contact-form" class="space-y-6">
+          <div class="space-y-4">
+            <label
+              class="font-label-sm text-label-sm text-[#6c717a] block uppercase tracking-widest"
+              >NOMBRE</label
+            >
+            <input
+              id="contact-name"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 transition-all"
+              placeholder="Tu nombre..."
+              type="text"
+              required
+            />
+          </div>
+          <div class="space-y-4">
+            <label
+              class="font-label-sm text-label-sm text-[#6c717a] block uppercase tracking-widest"
+              >EMAIL (OPCIONAL)</label
+            >
+            <input
+              id="contact-email"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 transition-all"
+              placeholder="tu@email.com"
+              type="email"
+            />
+          </div>
+          <div class="space-y-4">
+            <label
+              class="font-label-sm text-label-sm text-[#6c717a] block uppercase tracking-widest"
+              >MENSAJE</label
+            >
+            <textarea
+              id="contact-message"
+              class="w-full bg-transparent border-0 border-b border-[#6c717a] focus:border-[#E5C17E] focus:ring-0 font-body-md text-[#f2f3f5] placeholder:opacity-20 py-4 h-32 transition-all resize-none"
+              placeholder="Escribe tu mensaje..."
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full font-label-sm text-label-sm py-6 border border-[#E5C17E] text-[#E5C17E] hover:bg-[#E5C17E] hover:text-[#0E0E11] hover:shadow-[0_0_15px_rgba(229,193,126,0.4)] transition-all duration-500 uppercase tracking-widest"
+          >
+            Enviar Mensaje
+          </button>
+        </form>
+        <div
+          id="contact-success"
+          class="hidden mt-6 p-4 bg-[#E5C17E]/10 border border-[#E5C17E]/30 rounded"
+        >
+          <p class="font-body-md text-[#E5C17E] text-center">
+            Tu mensaje ha sido enviado. Te responderemos en breve.
           </p>
         </div>
       </div>
