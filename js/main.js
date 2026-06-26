@@ -2,7 +2,7 @@
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const closeMenuBtn = document.getElementById('close-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
-const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+const mobileMenuLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
 
 if (mobileMenuBtn) {
   mobileMenuBtn.addEventListener('click', () => {
@@ -227,61 +227,74 @@ if (contactForm) {
   });
 }
 
-// Scroll Reveal Animation
+// Scroll Reveal Animation with IntersectionObserver
 const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
 
-const revealOnScroll = () => {
-  scrollRevealElements.forEach((element, index) => {
-    const elementTop = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-    
-    if (elementTop < windowHeight - 100) {
-      setTimeout(() => {
-        element.classList.add('visible');
-      }, index * 100);
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
     }
   });
-};
+}, {
+  threshold: 0.15,
+  rootMargin: '0px 0px -50px 0px',
+});
 
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
+scrollRevealElements.forEach((el) => revealObserver.observe(el));
 
-// Smooth parallax and scroll effects
+// Smooth parallax and scroll effects (throttled with rAF)
 const heroText = document.querySelector('.animate-reveal');
 const header = document.getElementById('header');
 const glows = document.querySelectorAll('.eclipse-glow');
 
+let scrollTicking = false;
 window.addEventListener('scroll', () => {
-  const scrolled = window.pageYOffset;
-  
-  if (heroText) {
-    heroText.style.transform = `translateY(${scrolled * 0.15}px)`;
-    heroText.style.opacity = 1 - scrolled / 800;
-  }
+  if (!scrollTicking) {
+    requestAnimationFrame(() => {
+      const scrolled = window.pageYOffset;
 
-  if (header) {
-    if (scrolled > 50) {
-      header.classList.add('py-4', 'bg-[#0E0E11]/80');
-      header.classList.remove('py-8');
-    } else {
-      header.classList.remove('py-4', 'bg-[#0E0E11]/80');
-      header.classList.add('py-8');
-    }
+      if (heroText) {
+        heroText.style.transform = `translateY(${scrolled * 0.15}px)`;
+        heroText.style.opacity = 1 - scrolled / 800;
+      }
+
+      if (header) {
+        if (scrolled > 50) {
+          header.classList.add('py-4', 'bg-[#0E0E11]/80');
+          header.classList.remove('py-8');
+        } else {
+          header.classList.remove('py-4', 'bg-[#0E0E11]/80');
+          header.classList.add('py-8');
+        }
+      }
+
+      scrollTicking = false;
+    });
+    scrollTicking = true;
   }
 });
 
-// Atmospheric Glow Interaction
+// Atmospheric Glow Interaction (throttled with rAF)
+let mouseTicking = false;
+let mouseX = 0;
+let mouseY = 0;
+
 document.addEventListener('mousemove', (e) => {
-  const x = e.clientX / window.innerWidth - 0.5;
-  const y = e.clientY / window.innerHeight - 0.5;
+  mouseX = e.clientX / window.innerWidth - 0.5;
+  mouseY = e.clientY / window.innerHeight - 0.5;
 
-  glows.forEach((glow, index) => {
-    const speed = (index + 1) * 20;
-    glow.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
-  });
+  if (!mouseTicking) {
+    requestAnimationFrame(() => {
+      glows.forEach((glow, index) => {
+        const speed = (index + 1) * 20;
+        glow.style.transform = `translate(${mouseX * speed}px, ${mouseY * speed}px)`;
+      });
+      mouseTicking = false;
+    });
+    mouseTicking = true;
+  }
 });
 
-// Add staggered animation delays to scroll-reveal elements
-scrollRevealElements.forEach((element, index) => {
-  element.style.transitionDelay = `${index * 0.1}s`;
-});
+
